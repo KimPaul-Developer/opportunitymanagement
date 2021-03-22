@@ -1,0 +1,72 @@
+.container{
+	height: 900px;
+	width: 1000px;
+	margin: auto;
+	display: grid;
+	grid-template-areas: "header header header"
+						 "left main main";
+						
+	
+	grid-template-columns: 1fr 2fr; 
+}
+.title{
+	background: #0000FF;
+	grid-area: header;
+	height: 5px
+}
+
+.side{
+	background-color: #95bd31;
+	grid-area:left;
+	height: 580px;
+	width: 250px;
+	
+}
+.content{
+	background: #FFFFFF;
+	grid-area: main;
+	width: 510px;
+	height: 580px;
+}
+
+.cont{
+	color: black;
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 5rem;
+}
+div ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+}
+li a {
+	display: block;
+	color:#000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	display: flex;
+	background-color: #555;
+	color: white;
+}
+div ul ul{
+	position: absolute;
+	left: 150px;
+	width: 200px
+	top:0;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+
+}
+ ul .dropdown{
+	position:relative;
+}
+ ul .dropdown:hover ul{
+	display: initial;
+}
+li li a:hover {
+	background-color: #555;
+	color: white;
